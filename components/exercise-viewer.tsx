@@ -418,11 +418,11 @@ function MatchExercise({
                   : "border-border"
               }`}
             >
-              <span className="text-sm font-medium min-w-[200px]">
+              <span className="text-sm font-medium sm:min-w-[200px]">
                 {pair.left}
               </span>
               <ArrowRight className="h-4 w-4 text-muted-foreground hidden sm:block shrink-0" />
-              <div className="flex-1">
+              <div className="flex-1 w-full">
                 <select
                   value={answers[pair.id] || ""}
                   onChange={(e) => {
@@ -560,13 +560,13 @@ export function ExerciseViewer({
         const IconComponent = BookOpen;
         return (
           <div key={topic.id} className="space-y-6">
-            <div className="flex items-center gap-4">
-              <div className="flex size-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 shadow-sm">
-                <IconComponent className="size-7 text-indigo-600" />
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex size-10 sm:size-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 shadow-sm shrink-0">
+                <IconComponent className="size-5 sm:size-7 text-indigo-600" />
               </div>
-              <div>
-                <h2 className="text-2xl font-bold">{topic.title}</h2>
-                <p className="text-sm text-muted-foreground">
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-2xl font-bold">{topic.title}</h2>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   {topic.description}
                 </p>
               </div>

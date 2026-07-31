@@ -52,7 +52,7 @@ export default function LecturesPage() {
         >
           <BookOpen className="h-5 w-5 text-white/25" />
         </div>
-        <div className="relative container mx-auto px-4 py-16 sm:py-20 lg:py-28">
+        <div className="relative container mx-auto px-4 py-16 sm:py-16 sm:py-20 lg:py-28">
           <div className="max-w-2xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <div className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
               <Film className="h-10 w-10 text-white" />
@@ -70,7 +70,7 @@ export default function LecturesPage() {
         </div>
       </section>
 
-      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-16 sm:py-20">
+      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-16 sm:py-16 sm:py-20">
         <div
           className="deco-circle deco-circle-md deco-circle-purple animate-pulse-soft"
           style={{ top: "15%", right: "5%" }}
@@ -173,7 +173,7 @@ export default function LecturesPage() {
 
       <AnimatedSection
         animation="scale"
-        className="relative overflow-hidden py-20 bg-pragma-gradient-alt"
+        className="relative overflow-hidden py-16 sm:py-20 bg-pragma-gradient-alt"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-yellow animate-float"
@@ -205,30 +205,30 @@ export default function LecturesPage() {
           <BookOpen className="h-5 w-5 text-white/25" />
         </div>
         <div className="relative container mx-auto px-4">
-          <div className="max-w-xl mx-auto text-center space-y-8">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
-              <BookOpen className="h-8 w-8 text-white" />
+          <div className="max-w-xl mx-auto text-center space-y-6 sm:space-y-8">
+            <div className="inline-flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
+              <BookOpen className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
             <div className="space-y-4">
               <h2 className="section-title text-white drop-shadow-lg">
                 Получите полный доступ к лекциям
               </h2>
-              <p className="text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
+              <p className="text-base sm:text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
                 Все видеолекции доступны при покупке любого курса. Запишитесь
                 сейчас и смотрите уроки в любое время.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="/courses"
-                className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
               >
                 Выбрать курс
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link
                 href="/#cta"
-                className="inline-flex items-center gap-2 rounded-xl bg-orange-500/20 backdrop-blur-sm px-8 py-4 text-base font-bold text-white shadow-xl ring-1 ring-white/30 transition-all hover:bg-orange-500/30 hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-xl bg-orange-500/20 backdrop-blur-sm px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl ring-1 ring-white/30 transition-all hover:bg-orange-500/30 hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
               >
                 Записаться на пробный
               </Link>

@@ -249,12 +249,12 @@ export function DemoSections({ materials }: { materials: DemoMaterial[] }) {
         return (
           <div key={section} className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 shadow-sm">
-                <Icon className="size-6 text-indigo-600" />
+              <div className="flex size-10 sm:size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 shadow-sm shrink-0">
+                <Icon className="size-5 sm:size-6 text-indigo-600" />
               </div>
-              <div>
-                <h2 className="text-xl font-bold">{section}</h2>
-                <p className="text-sm text-muted-foreground">
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-xl font-bold">{section}</h2>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   {sectionMaterials.length}{" "}
                   {sectionMaterials.length === 1 ? "материал" : "материала"}
                 </p>

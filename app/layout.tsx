@@ -37,41 +37,41 @@ export default function RootLayout({
               </div>
               <span className="text-pragma-gradient">{appName}</span>
             </Link>
-            <nav className="flex items-center gap-1">
+            <nav className="flex items-center gap-0.5 sm:gap-1">
               <Link
                 href="/courses"
-                className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
+                className="inline-flex items-center gap-1.5 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
               >
-                <BookOpen className="h-4 w-4" />
-                Курсы
+                <BookOpen className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">Курсы</span>
               </Link>
               <Link
                 href="/demo"
-                className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
+                className="inline-flex items-center gap-1.5 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
               >
-                <FileText className="h-4 w-4" />
-                Демо
+                <FileText className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">Демо</span>
               </Link>
               <Link
                 href="/lectures"
-                className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
+                className="inline-flex items-center gap-1.5 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
               >
-                <Film className="h-4 w-4" />
-                Лекции
+                <Film className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">Лекции</span>
               </Link>
               <Link
                 href="/exercises"
-                className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
+                className="inline-flex items-center gap-1.5 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-muted-foreground transition-all hover:text-orange-600 hover:bg-orange-50"
               >
-                <PenTool className="h-4 w-4" />
-                Упражнения
+                <PenTool className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">Упражнения</span>
               </Link>
               <Link
                 href="/german"
-                className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-amber-600 transition-all hover:text-amber-700 hover:bg-amber-50"
+                className="inline-flex items-center gap-1.5 rounded-lg px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-amber-600 transition-all hover:text-amber-700 hover:bg-amber-50"
               >
-                <Languages className="h-4 w-4" />
-                Немецкий
+                <Languages className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">Немецкий</span>
               </Link>
             </nav>
           </div>

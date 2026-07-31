@@ -41,7 +41,7 @@ export default function ExercisesPage() {
         >
           <Pencil className="h-5 w-5 text-white/25" />
         </div>
-        <div className="relative container mx-auto px-4 py-16 sm:py-20 lg:py-28">
+        <div className="relative container mx-auto px-4 py-16 sm:py-16 sm:py-20 lg:py-28">
           <div className="max-w-2xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <div className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
               <PenTool className="h-10 w-10 text-white" />
@@ -59,7 +59,7 @@ export default function ExercisesPage() {
         </div>
       </section>
 
-      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-16 sm:py-20">
+      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-16 sm:py-16 sm:py-20">
         <div
           className="deco-circle deco-circle-md deco-circle-purple animate-pulse-soft"
           style={{ top: "10%", left: "-5%" }}
@@ -100,7 +100,7 @@ export default function ExercisesPage() {
 
       <AnimatedSection
         animation="scale"
-        className="relative overflow-hidden py-20 bg-pragma-gradient-alt"
+        className="relative overflow-hidden py-16 sm:py-20 bg-pragma-gradient-alt"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-yellow animate-float"
@@ -133,14 +133,14 @@ export default function ExercisesPage() {
         </div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-xl mx-auto text-center space-y-6">
-            <div className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
-              <BookOpen className="h-10 w-10 text-white" />
+            <div className="inline-flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
+              <BookOpen className="h-6 w-6 sm:h-10 sm:w-10 text-white" />
             </div>
             <div className="space-y-4">
               <h2 className="section-title text-white drop-shadow-lg">
                 Готовы проверить себя?
               </h2>
-              <p className="text-lg text-amber-100">
+              <p className="text-base sm:text-lg text-amber-100">
                 {Array.isArray(exercises) && exercises.length > 0
                   ? `Доступно ${exercises.length} упражнений по ${exerciseTopics.length} темам.`
                   : "Упражнения скоро появятся."}
@@ -148,10 +148,10 @@ export default function ExercisesPage() {
             </div>
             <Link
               href="/courses"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
             >
               Выбрать курс
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
             </Link>
           </div>
         </div>

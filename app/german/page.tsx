@@ -60,20 +60,20 @@ export default function GermanPage() {
                 нуля до уверенного общения
               </p>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
               <Link
                 href="#formats"
-                className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-amber-700 shadow-lg transition-all hover:bg-amber-50 hover:shadow-xl"
+                className="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-semibold text-amber-700 shadow-lg transition-all hover:bg-amber-50 hover:shadow-xl"
               >
                 Выбрать формат
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <AnimatedSection className="bg-gradient-to-b from-amber-50/50 to-white relative overflow-hidden py-24">
+      <AnimatedSection className="bg-gradient-to-b from-amber-50/50 to-white relative overflow-hidden py-16 sm:py-24">
         <div
           className="sticker sticker-pencil animate-float"
           style={{ top: "20%", right: "8%" }}
@@ -146,7 +146,7 @@ export default function GermanPage() {
       <AnimatedSection
         id="formats"
         animation="left"
-        className="bg-white relative overflow-hidden py-24"
+        className="bg-white relative overflow-hidden py-16 sm:py-24"
       >
         <div
           className="sticker sticker-book animate-float"
@@ -225,7 +225,7 @@ export default function GermanPage() {
       <AnimatedSection
         id="registration"
         animation="right"
-        className="bg-gradient-to-br from-amber-600 via-orange-500 to-red-500 relative overflow-hidden py-24"
+        className="bg-gradient-to-br from-amber-600 via-orange-500 to-red-500 relative overflow-hidden py-16 sm:py-24"
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-10 left-10 h-64 w-64 rounded-full bg-white/5" />
@@ -246,10 +246,10 @@ export default function GermanPage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-xl mx-auto text-center space-y-8">
             <div className="space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white drop-shadow-lg">
+              <h2 className="text-2xl sm:text-3xl sm:text-4xl font-bold tracking-tight text-white drop-shadow-lg">
                 Запишитесь на пробное занятие
               </h2>
-              <p className="text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
+              <p className="text-base sm:text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
                 Выберите подходящий формат и мы свяжемся с вами для обсуждения
                 деталей
               </p>

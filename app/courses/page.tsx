@@ -250,25 +250,25 @@ export default function CoursesPage() {
           <BookOpen className="h-5 w-5 text-white/25" />
         </div>
         <div className="relative container mx-auto px-4">
-          <div className="max-w-xl mx-auto text-center space-y-8">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
-              <Star className="h-8 w-8 text-white" />
+          <div className="max-w-xl mx-auto text-center space-y-6 sm:space-y-8">
+            <div className="inline-flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
+              <Star className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
             <div className="space-y-4">
               <h2 className="section-title text-white drop-shadow-lg">
                 Не уверены, какой курс выбрать?
               </h2>
-              <p className="text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
+              <p className="text-base sm:text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
                 Запишитесь на бесплатное пробное занятие — мы определим ваш
                 уровень и поможем подобрать программу
               </p>
             </div>
             <Link
               href="/#cta"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
             >
               Записаться на пробный
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
             </Link>
           </div>
         </div>

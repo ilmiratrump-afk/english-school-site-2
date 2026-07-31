@@ -90,27 +90,27 @@ export default function HomePage() {
                 {site.description}
               </p>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
               <Link
                 href="#cta"
-                className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
               >
                 {site.cta}
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link
                 href="/courses"
-                className="inline-flex items-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-8 py-4 text-base font-semibold text-white ring-1 ring-white/20 transition-all hover:bg-white/20 hover:ring-white/30"
+                className="inline-flex items-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-white ring-1 ring-white/20 transition-all hover:bg-white/20 hover:ring-white/30"
               >
                 Наши курсы
-                <BookOpen className="h-5 w-5" />
+                <BookOpen className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-24">
+      <AnimatedSection className="bg-pragma-gradient-section relative overflow-hidden py-16 sm:py-24">
         <div
           className="deco-circle deco-circle-md deco-circle-purple animate-pulse-soft"
           style={{ top: "10%", left: "-5%" }}
@@ -188,7 +188,7 @@ export default function HomePage() {
 
       <AnimatedSection
         animation="left"
-        className="relative overflow-hidden py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50"
+        className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-orange animate-float"
@@ -247,20 +247,20 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
-                <div className="flex flex-wrap items-center gap-4 pt-2">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
                   <Link
                     href="/courses"
-                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-4 text-base font-bold text-white shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
                   >
                     Выбрать курс
-                    <ArrowRight className="h-5 w-5" />
+                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                   <Link
                     href="#cta"
-                    className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-lg ring-1 ring-orange-200 transition-all hover:shadow-xl hover:scale-105 active:scale-[0.98]"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-lg ring-1 ring-orange-200 transition-all hover:shadow-xl hover:scale-105 active:scale-[0.98]"
                   >
                     Предзаписаться в группу
-                    <ArrowRight className="h-5 w-5" />
+                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function HomePage() {
 
       <AnimatedSection
         animation="left"
-        className="relative overflow-hidden py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50"
+        className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50"
       >
         <div
           className="deco-circle deco-circle-md deco-circle-orange animate-pulse-soft"
@@ -338,7 +338,7 @@ export default function HomePage() {
 
       <AnimatedSection
         animation="right"
-        className="relative overflow-hidden py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50"
+        className="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-purple animate-float"
@@ -483,7 +483,7 @@ export default function HomePage() {
 
       <AnimatedSection
         animation="right"
-        className="bg-section-bg-alt-1 relative overflow-hidden py-24"
+        className="bg-section-bg-alt-1 relative overflow-hidden py-16 sm:py-24"
       >
         <div
           className="deco-circle deco-circle-md deco-circle-green animate-pulse-soft"
@@ -592,7 +592,7 @@ export default function HomePage() {
 
       <AnimatedSection
         id="cta"
-        className="relative overflow-hidden py-24 bg-pragma-gradient"
+        className="relative overflow-hidden py-16 sm:py-24 bg-pragma-gradient"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-yellow animate-float"
@@ -636,7 +636,7 @@ export default function HomePage() {
               <h2 className="section-title text-white drop-shadow-lg">
                 {ctaSection.title}
               </h2>
-              <p className="text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
+              <p className="text-base sm:text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
                 {ctaSection.description}
               </p>
             </div>

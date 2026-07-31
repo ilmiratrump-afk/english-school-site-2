@@ -48,7 +48,7 @@ export default function DemoPage() {
         >
           <Pencil className="h-5 w-5 text-white/25" />
         </div>
-        <div className="relative container mx-auto px-4 py-16 sm:py-20 lg:py-28">
+        <div className="relative container mx-auto px-4 py-16 sm:py-16 sm:py-20 lg:py-28">
           <div className="max-w-2xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <div className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
               <FileText className="h-10 w-10 text-white" />
@@ -66,7 +66,7 @@ export default function DemoPage() {
         </div>
       </section>
 
-      <AnimatedSection className="bg-section-bg-alt-2 relative overflow-hidden py-16 sm:py-20">
+      <AnimatedSection className="bg-section-bg-alt-2 relative overflow-hidden py-16 sm:py-16 sm:py-20">
         <div
           className="deco-circle deco-circle-md deco-circle-orange animate-pulse-soft"
           style={{ top: "10%", right: "5%" }}
@@ -116,7 +116,7 @@ export default function DemoPage() {
 
       <AnimatedSection
         animation="scale"
-        className="relative overflow-hidden py-20 bg-gradient-to-br from-orange-600 via-amber-500 to-yellow-500"
+        className="relative overflow-hidden py-16 sm:py-20 bg-gradient-to-br from-orange-600 via-amber-500 to-yellow-500"
       >
         <div
           className="deco-circle deco-circle-lg deco-circle-orange animate-float"
@@ -146,15 +146,15 @@ export default function DemoPage() {
           <Globe className="h-5 w-5 text-white/30" />
         </div>
         <div className="relative container mx-auto px-4">
-          <div className="max-w-xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
-              <Star className="h-8 w-8 text-white" />
+          <div className="max-w-xl mx-auto text-center space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <div className="inline-flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/20">
+              <Star className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
             <div className="space-y-4">
               <h2 className="section-title text-white drop-shadow-lg">
                 Готовы к полноценной подготовке?
               </h2>
-              <p className="text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
+              <p className="text-base sm:text-lg text-amber-100 leading-relaxed max-w-lg mx-auto">
                 На полном курсе вас ждут проверка заданий преподавателем,
                 подробный разбор ошибок, пробные экзамены ежемесячно и
                 индивидуальный план подготовки. Начните заниматься уже сегодня!
@@ -162,10 +162,10 @@ export default function DemoPage() {
             </div>
             <Link
               href="/courses"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-orange-600 shadow-xl transition-all hover:shadow-2xl hover:scale-105 active:scale-[0.98]"
             >
               Выбрать курс
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
             </Link>
           </div>
         </div>
